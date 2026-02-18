@@ -16,7 +16,7 @@ fn main() {
     let mouse = Mouse::new();
     loop {
         match mouse.get_position() {
-            Ok(position) => _ = mouse.move_to(position.x + 1, position.y + 1),
+            Ok(position) => _ = mouse.move_to(position.x + 10, position.y + 10),
             Err(e) => {
                 eprintln!("Error getting mouse position: {}", e);
                 continue;
